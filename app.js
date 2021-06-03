@@ -3,6 +3,13 @@ const axios = require('axios');
 const Discord = require('discord.js')
 const chalk = require('chalk');
 const client = new Discord.Client();
+const express = require('express');
+
+const app = express();
+
+app.get('/',(req,res) => {
+  res.send("Hello");
+})
 
 locations = [
     "Uppuguda UPHC 2",
@@ -50,3 +57,6 @@ setInterval(() => {
 
 client.login('ODQ5NTM2Mjc5Nzg3MDc3NjUz.YLcmUA.2BECYFxzMgkYkUCdhHUX0WssVDA')
 
+app.listen(5000,() => {
+  console.log("Listening on port 5000");
+})

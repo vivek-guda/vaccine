@@ -2,17 +2,22 @@
   "name": "vaccine",
   "version": "1.0.0",
   "description": "",
-  "main": "vaccine.js",
+  "main": "app.js",
   "dependencies": {
     "axios": "^0.21.1",
     "chalk": "^4.1.1",
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "express": "^4.17.1"
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "14.17.0"
+  }
 }
